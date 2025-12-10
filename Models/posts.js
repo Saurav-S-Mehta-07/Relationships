@@ -38,7 +38,7 @@ const addData = async()=>{
 // addData();
 
 async function findData(){
-    let res = await Post.find().populate("user");
+    let res = await Post.find().populate("user","username"); //or -> ["username","email"]
     console.log(res);
 }
 
