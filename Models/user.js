@@ -13,7 +13,6 @@ const userSchema = new Schema({
       username : String,
       addresses : [
         {
-            _id:false,
             location : String,
             city : String,
         },
@@ -24,7 +23,7 @@ const User = mongoose.model("user",userSchema);
 
 const addUsers = async()=>{
     let user1 = new User({
-        username: "Rahul Kumar",
+        username: "Suraj Mehta",
         addresses : [
             {location:"221B baker street", city : "London"},
         ]
